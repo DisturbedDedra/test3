@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{font-family: rochester;
+    src: url(fonts/rochester.woff);
+    font-weight:normal;
+    font-style: normal;}
+
+   header, section, footer, aside, nav, article, figure, figcaption{
+       display: block;
+   }
+
+   body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #9c1f1f, #af751e);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+       color: white;
+       background-color: #f9f8f6;
+             background-position: center;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       line-height: 1.4em;
+       margin:0px;  }
+
+     
+    
+       .wrapper {
+           width: 1240px;
+           height: 895px;
+           margin: 50px auto 2px auto;
+           border: 2px solid gray;
+        background-color: black;}
+
+        header {
+            height: 160px;
+            background-image: url(ik.jpg);
+        }
+
+        h1 {
+            text-indent: -9999px;
+            width: 940px;
+            height: 130px;
+            margin: 0px;
+        }
+  
+        nav, footer {
+            clear: both;
+            color: #eee;
+            background-color: rgb(185, 38, 38);
+            height: 30px;
+        }
+        nav ul{
+            margin: 0px;
+            padding: 5px 5px 5px 10px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 80px;
+            
+        }       
+        nav li a {
+            color: #eee;
+        }
+        nav li a:hover, nav li a.current {
+            color: #000;
+        }
+
+        section.courses {
+            float: left;
+            width: 659px;
+            height: 700px;
+            border-right: 1px solid #eee;
+        }
+
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+
+        hgroup {
+            margin-top: 40px; }
+
+        figure {
+                float: left;
+                width: 290px;
+                height: 220px;
+                padding: 5px;
+                margin: 20px;
+                border: 1px solid #eee;
+            }
+
+        figcaption {font-size: 90%;
+                    text-align: left;}
+
+        aside{
+            width: 230px;
+            float: left;
+            padding: 0px 0px 0px 20px;
+        }
+
+        aside section a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        aside section a:hover {
+            color: #985d6a;
+            background-color: #efefef;
+        }
+
+        a{
+            color: rgb(185, 38, 38);
+            text-decoration: none;}
+                    
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+
+        h2 {
+            margin: 10px 0px 5px 0px ;
+                    padding:0px;}
+        h3 {
+            margin: 10px 0px 5px 0px;
+            color: rgb(185, 38, 38);}
+
+        aside h2
+        { padding: 30px 0px 10px 0px;
+        color: rgb(185, 38, 38);}
+
+        footer {
+            font-size:80%;
+            padding: 7px 0px 0px 20px;
+        }
+
+        @-webkit-keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+/* grote destkop */
+@media screen and (min-width:1035px){
+	aside{
+		margin-right:20px;
+	}
+	
+	
+	article{
+		margin-left:0px;
+	}	
+}
+
+
+/*kleine destkop / tablet landscape */
+@media screen and (min-width:769px) and (max-width:1024px){
+	
+	nav{
+		width:100%;
+		height:auto;
+		text-align:left;
+		padding-top:14px;
+		float:left;
+		margin-left:-20px;
+	}
+    
+	aside{margin-right:20px;
+	}
+	
+
+	article{
+		margin-left:0px;
+}
+}
+
+/*tablet portrait / grote telefoon */
+@media screen and (min-width:481px) and (max-width:768px){
+	nav{
+		width:100%;
+		height:auto;
+		text-align:left;
+		padding-top:14px;
+		padding-left:0px;
+		float:left;
+		margin-left:-20px;
+	    }
+
+	nav ul li{
+		display:block;
+		font-size:22px;
+	}
+	
+	
+	
+	aside{
+		margin-right:20px;
+	}
+	
+	article{
+		margin-left:0px;
+	}
+    }
+
+/* kleine telefoon */
+
+@media screen and (max-width:480px){
+	
+	nav{
+	    width:100%;
+		height:auto;
+		text-align:left;
+		padding-top:14px;
+		float:left;
+		margin-left:-20px;
+	}
+	nav ul{
+		
+	}  
+	nav ul li{
+		display: block;
+		font-size:22px;
+	}
+	nav ul li a {
+        
+    }
+     
+ 
+	article{
+		margin-left:0px;
+		margin-right:0px;
+	}
+}
